@@ -11,3 +11,5 @@ CREATE TABLE clientes (
     email VARCHAR(255) NOT NULL UNIQUE,
     telefone VARCHAR(20)
 );
+
+CREATE USER 'bruno'@'localhost' IDENTIFIED BY 'Senh4df987'; GRANT ALL PRIVILEGES ON db_cadastro_cliente.* TO 'bruno'@'localhost'; FLUSH PRIVILEGES;
